@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdditionOfVaccinatonCentre"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#C0392B"
+        app:titleTextColor="@color/white"
+
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Centre Name"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:id="@+id/VcName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:text="Add Address"
+                android:textSize="18sp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/CentreNoOfPanchayat"
+                android:textColor="@color/black"
+                /> <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textColor="#F39C12 "
+            android:textSize="17sp"
+            android:id="@+id/VcAddressAssigning"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add contact number"
+                android:textSize="18sp"
+                android:id="@+id/contactNumbeVc"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/addVaccinationCentreToList"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#C0392B"
+                android:textColor="@color/white"
+                android:text="Add"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

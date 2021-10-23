@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdditionOfCovidCentre"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#34495E"
+        app:titleTextColor="@color/white"
+
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Centre Name"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:id="@+id/CcName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:text="Add Address"
+                android:textSize="18sp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/cCentreNoOfPanchayat"
+                android:textColor="@color/black"
+                /> <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textColor="#F39C12 "
+            android:textSize="17sp"
+
+            android:id="@+id/CcAddressAssigning"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add contact number"
+                android:textSize="18sp"
+                android:id="@+id/contactNumbeCc"/>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/addCovidCentreToList"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="#34495E"
+                android:textColor="@color/white"
+                android:text="Add"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

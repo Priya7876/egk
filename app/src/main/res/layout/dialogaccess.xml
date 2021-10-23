@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--TODO (Step 4: Design an view for dialog to search a member.)-->
+
+<!--START-->
+
+<FrameLayout android:layout_height="match_parent"
+
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--END-->
+
+
+
+
+
+        <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="Sign In"
+            android:id="@+id/tvDialogTitle"/>
+
+
+
+
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:id="@+id/et_email"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"/>
+
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:id="@+id/et_password"
+
+            android:hint="Password"/>
+
+
+        <LinearLayout
+            android:layout_height="30sp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Sign In"
+                android:id="@+id/tv_signIn"
+               />
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Cancel"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:id="@+id/tv_cancel"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

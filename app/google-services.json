@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683940898498",
+    "project_id": "egraminkendra-e4b52",
+    "storage_bucket": "egraminkendra-e4b52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683940898498:android:3c365dac7f185d945b3d5b",
+        "android_client_info": {
+          "package_name": "com.example.android.graminkendra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683940898498-k878h3t733ct33rfskkkprc3lvohogdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-RokKIZ09azwmgHNWwmKNaCEiD3hyCZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683940898498-k878h3t733ct33rfskkkprc3lvohogdc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

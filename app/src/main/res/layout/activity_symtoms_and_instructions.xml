@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+
+       >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSymptomsAndInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            android:background="#8B0000"
+
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginTop="50sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/stopcovid" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“STRENGTHENS YOUR LUNGS, BY DEEP BREATHING; "
+
+            android:textSize="15sp"
+            android:textColor="#8B0000"
+            android:layout_marginTop="22dp"
+            android:textStyle="italic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CORONA VIRUS WILL RUN, WITHOUT CEASING.”"
+            android:textSize="14sp"
+            android:textColor="#FF3131"
+
+            android:textStyle="italic"/>
+
+
+
+
+        <Button
+
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Symptoms"
+            android:layout_marginTop="40sp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:id="@+id/SymptomButton"
+android:background="#F6412D"
+            android:backgroundTint="#F6412D"
+
+            />
+
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Preventions"
+            android:textAllCaps="false"
+            android:id="@+id/PreviousButton"
+            android:layout_marginTop="10sp"
+            android:textSize="18sp"
+            android:background="#FF5607"
+
+            />
+    </LinearLayout>
+
+</ScrollView>

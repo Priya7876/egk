@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarComplaintDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+
+android:background="#007965"
+        app:titleTextColor="@color/white"
+
+        />
+    <ImageView
+        android:id="@+id/imageViewForDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#99A3A4"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_image_24"/>
+    <TextView
+        android:id="@+id/titleOfCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_marginTop="10sp"
+        android:id="@+id/deScriptionCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="17dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

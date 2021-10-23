@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.graminkendra">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GraminKendra">
+        <activity android:name=".ImporantInstructions"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar"
+            ></activity>
+        <activity android:name=".commonSymtoms"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar"/>
+        <activity android:name=".symtomsAndInstructions"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar"/>
+        <activity
+            android:name=".covidCentreInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".vaccinationInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".addCovidCentre"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".addVaccinationCentre"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".addAsha"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".ashaWorker"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".covidInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity android:name=".viewProfile" />
+        <activity
+            android:name=".signActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".myProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".detailsOfSchemes"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".detail_meeting"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".complaintDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".additionOfSchemas"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".additionOfEvent"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity android:name=".baseactivity" />
+        <activity
+            android:name=".infoM"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".infoS"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".addComplaint"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".information"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".infoC"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

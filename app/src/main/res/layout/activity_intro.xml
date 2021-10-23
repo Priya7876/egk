@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+
+    tools:context=".IntroActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e-GraminKendra"
+        android:textSize="28sp"
+        android:textColor="#523f5e"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="50sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/finalimage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Connected"
+        android:textSize="22sp"
+        android:textColor="#523f5e"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Updated"
+        android:textSize="19sp"
+        android:textColor="#523f5e"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="18sp"
+      android:layout_margin="18sp"
+
+        android:layout_marginRight="10sp"/>
+
+
+
+<Button
+    android:layout_width="300sp"
+    android:layout_height="wrap_content"
+    android:text="Sign In"
+    android:layout_marginTop="10sp"
+
+    android:textSize="18sp"
+    android:id="@+id/SignButton"
+   android:background="@drawable/roundbuttin"
+
+    />
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text="See Updates"
+        android:id="@+id/seeUpdateButton"
+        android:layout_marginTop="10sp"
+        android:textSize="18sp"
+        android:background="@drawable/roundbuttin"
+
+        />
+    </LinearLayout>
+
+</ScrollView>

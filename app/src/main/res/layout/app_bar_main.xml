@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context=".information">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarInformation"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            android:background="#523f5e"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaints"
+            android:textColor="@color/white"
+            android:text="Complaints"
+            android:layout_gravity="center_vertical"
+            android:textSize="25sp"
+            android:padding="10sp"
+            android:layout_marginTop="30sp"
+            android:background="#007965"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scheme"
+            android:text="Schemes"
+            android:layout_gravity="center_vertical"
+            android:textSize="25sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:padding="10sp"
+            android:background="#30475E"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/meetingDate"
+            android:text="Important Date"
+            android:layout_gravity="center_vertical"
+            android:textSize="25sp"
+            android:padding="10sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:background="#F05454"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/covidCrisis"
+            android:text="CoVid-19 corner"
+            android:layout_gravity="center_vertical"
+            android:textSize="25sp"
+            android:padding="10sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:background="#AF601A"/>
+
+        <ImageView
+            android:layout_width="400sp"
+            android:layout_height="300sp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90sp"
+            android:src="@drawable/grmahit"/>
+
+    </LinearLayout>
+</ScrollView>
