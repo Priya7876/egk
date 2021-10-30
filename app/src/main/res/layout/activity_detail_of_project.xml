@@ -1,9 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DetailOfProject">
+    android:background="#ffb703"
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolProjectDetail"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#1000a3"
+        app:titleTextColor="@color/white"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageViewForDetailProject"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#99A3A4"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_baseline_image_24"/>
+    <TextView
+        android:id="@+id/ProjecNameOngoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Name"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_marginTop="10sp"
+        android:id="@+id/descriptionOfProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="17dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10sp"
+        />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="25sp"
+        android:layout_width="match_parent"
+        android:layout_margin="18dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/ProgressDetailOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starting Date"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10sp"
+                    />
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:id="@+id/startingDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic"
+                    android:textColor="#280eed"
+                    android:layout_marginBottom="10sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+            <TextView
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of workers:  "
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10sp"
+                />
+            <TextView
+                android:layout_marginTop="10sp"
+                android:id="@+id/workers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10sp"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10sp"
+                    />
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:id="@+id/statusOfCompletion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:textColor="#280eed"
+                    android:layout_marginBottom="10sp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

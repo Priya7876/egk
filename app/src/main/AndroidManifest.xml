@@ -15,16 +15,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GraminKendra">
-        <activity android:name=".ImporantInstructions"
+        <activity android:name=".addOnGoingProject"
             android:screenOrientation="portrait"
-            android:theme="@style/noactionBar"
-            ></activity>
-        <activity android:name=".commonSymtoms"
-            android:screenOrientation="portrait"
-            android:theme="@style/noactionBar"/>
-        <activity android:name=".symtomsAndInstructions"
+            android:theme="@style/noactionBar"></activity>
+        <activity android:name=".projectInfo"
             android:screenOrientation="portrait"
             android:theme="@style/noactionBar"/>
+        <activity android:name=".editDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar"/>
+        <activity android:name=".DetailOfProject"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar"/>
+        <activity
+            android:name=".AddPhoneNumber"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".phoneNumberList"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".ImporantInstructions"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".commonSymtoms"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".symtomsAndInstructions"
+            android:screenOrientation="portrait"
+            android:theme="@style/noactionBar" />
         <activity
             android:name=".covidCentreInfo"
             android:screenOrientation="portrait"

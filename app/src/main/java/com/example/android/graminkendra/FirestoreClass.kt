@@ -136,6 +136,8 @@ class FirestoreClass {
             }
 
     }
+
+
     fun UsweFireData(activity: Activity,readBoardList:Boolean=false){
         mStore.collection("User").document(getCurrentUserId()).get(
 
@@ -260,6 +262,88 @@ fun createVaccination(activity:addVaccinationCentre,vaccinationG:vaccination){
                 activity.hideDialog()
                 Log.e("error in getList","oops have error in getting list")
             }
+    }
+    fun createPhoneNumber(activity:AddPhoneNumber,Phone:phoneFormat){
+        mStore.collection("PhoneList").document().set(Phone, SetOptions.merge()).addOnSuccessListener {
+            Log.e ("PhoneList","Event  Added successfully")
+
+            Toast.makeText(activity,"Event added", Toast.LENGTH_SHORT).show()
+            activity.PhoneListCreated()
+        }.addOnFailureListener {
+            activity.hideDialog()
+            Log.e ("Addition centre failed","OOPS,ERROR ARE THERE")
+
+        }
+
+    }
+
+    fun getPhoneList(activity:phoneNumberList){
+        mStore.collection("PhoneList").get()
+            .addOnSuccessListener {
+                    result->
+                Log.e("getSuccess","getSuccess")
+                var PhoneList:ArrayList<phoneFormat> =ArrayList()
+                for(document in result){
+                    var phoneNumber1=document.toObject(phoneFormat::class.java)!!
+
+                    PhoneList.add(phoneNumber1)
+
+                }
+                activity.populateRecyclerView(PhoneList)
+            }.addOnFailureListener {
+                activity.hideDialog()
+                Log.e("error in getList","oops have error in getting list")
+            }
+    }
+    fun createProject(activity:addOnGoingProject,Project:project){
+        mStore.collection("ProjectList").document().set(Project, SetOptions.merge()).addOnSuccessListener {
+            Log.e ("ProjectList","Event  Added successfully")
+
+            Toast.makeText(activity,"Event added", Toast.LENGTH_SHORT).show()
+          activity.ProjectCreationSuccessfull()
+        }.addOnFailureListener {
+            activity.hideDialog()
+            Log.e ("Addition project failed","OOPS,ERROR ARE THERE")
+
+        }
+
+    }
+    fun getProjectList(activity:projectInfo){
+        mStore.collection("ProjectList").get()
+            .addOnSuccessListener {
+                    result->
+                Log.e("getSuccess","getSuccess")
+                var PROJECTList:ArrayList<project> =ArrayList()
+                for(document in result){
+                    var projectNumber1=document.toObject(project::class.java)!!
+
+                   projectNumber1.documentId=document.id
+                   PROJECTList.add(projectNumber1)
+
+                }
+                activity.populateRecyclerView(PROJECTList)
+            }.addOnFailureListener {
+                activity.hideDialog()
+                Log.e("error in getList","oops have error in getting list")
+            }
+    }
+    fun updatePROJECTData(activity: editDetail,userHashMap:HashMap<String,Any>,Project1:project)
+    {
+        mStore.collection("ProjectList").document(Project1.documentId)
+            .update(userHashMap).addOnSuccessListener {
+                Log.e("updated message","Data is updated successfully")
+                Toast.makeText(activity
+                    , "Data is updated successfully",
+                    Toast.LENGTH_SHORT).show()
+                activity.ProjectUpdateSuccess()
+
+            }.addOnFailureListener{
+                    e->
+                activity.hideDialog()
+                Log.e("updation is failed","Error")
+
+            }
+
     }
 
 

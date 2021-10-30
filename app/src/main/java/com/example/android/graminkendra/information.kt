@@ -78,6 +78,14 @@ class information : baseactivity(), NavigationView.OnNavigationItemSelectedListe
             var intent =Intent(this,covidInfo::class.java)
             startActivity(intent)
         }
+        Telephony.setOnClickListener {
+            var intent =Intent(this,phoneNumberList::class.java)
+            startActivity(intent)
+        }
+        Project.setOnClickListener {
+            var intent =Intent(this,projectInfo::class.java)
+            startActivity(intent)
+        }
     }
     private  fun toggleDrawer(){
         if(my_drawer_layout.isDrawerOpen(GravityCompat.START)){

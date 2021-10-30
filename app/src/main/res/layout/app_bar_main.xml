@@ -67,6 +67,29 @@
             android:layout_marginTop="20sp"
             android:textColor="@color/white"
             android:background="#AF601A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Telephony"
+            android:text="Phone Number Diary"
+            android:layout_gravity="center_vertical"
+            android:textSize="25sp"
+            android:padding="10sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:background="#ba2371"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Project"
+            android:text="Projects and Progress"
+            android:layout_gravity="center_vertical"
+            android:textSize="25sp"
+            android:padding="10sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:background="#1000a3"/>
+
 
         <ImageView
             android:layout_width="400sp"

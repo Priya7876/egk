@@ -42,6 +42,7 @@ class covidInfo : AppCompatActivity() {
             val intent1 =Intent(this@covidInfo,symtomsAndInstructions::class.java)
             startActivity(intent1)
         }
+
     }
 
 }

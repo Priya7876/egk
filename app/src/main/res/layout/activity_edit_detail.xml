@@ -1,9 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".editDetail">
+    android:background="#ffd500"
+    android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolEditProjectDetail"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="#1000a3"
+            app:titleTextColor="@color/white"
+
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageViewForDetailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#99A3A4"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_baseline_image_24"/>
+                <TextView
+                    android:id="@+id/ProjecNameOngoingedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Name"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:id="@+id/descriptionOfProjectEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10sp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="25sp"
+            android:layout_width="match_parent"
+            android:layout_margin="14dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/ProgressDetailOf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progress"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Starting Date"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="italic"
+
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10sp"
+                        />
+                    <EditText
+                        android:layout_marginTop="5sp"
+                        android:id="@+id/startingDateEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                      android:hint="Select Date"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="italic"
+                        android:textColor="#280eed"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_marginTop="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number of workers:  "
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+
+                        />
+                    <EditText
+                        android:layout_marginTop="5sp"
+                        android:id="@+id/workersEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_marginTop="2sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Progress (in %):  "
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+
+                        />
+                    <EditText
+                        android:layout_marginTop="2sp"
+                        android:id="@+id/progressPercentEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:textColor="@color/black"
+
+                        />
+                    <EditText
+                        android:layout_marginTop="10sp"
+                        android:id="@+id/statusOfCompletionEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:textColor="#280eed"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Select:  "
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <Spinner
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/dropDownForStatusEdit"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+<Button
+    android:id="@+id/updateProject"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="Update"
+    android:textAllCaps="false"
+  android:layout_marginLeft="90dp"
+    android:background="#1000a3"
+    android:layout_marginTop="10dp"
+   android:layout_marginBottom="20dp"
+    android:backgroundTint="#1000a3"
+    android:textColor="@color/white"
+
+/>
+    </LinearLayout>
+</ScrollView>
